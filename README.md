@@ -1,4 +1,7 @@
 # Fratterhorn
+[![Build Status](https://travis-ci.org/unasuke/fratterhorn.svg?branch=master)](https://travis-ci.org/unasuke/fratterhorn)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/bcdf94958d43f2edf4ab/test_coverage)](https://codeclimate.com/github/unasuke/fratterhorn/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/bcdf94958d43f2edf4ab/maintainability)](https://codeclimate.com/github/unasuke/fratterhorn/maintainability)
 
 Fratterhorn is simple frontmatter parser gem. The origin of the name is **fr**ontmatter and M**atterhorn**
 
