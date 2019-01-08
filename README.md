@@ -1,8 +1,6 @@
 # Fratterhorn
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fratterhorn`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Fratterhorn is simple frontmatter parser gem. The origin of the name is **fr**ontmatter and M**atterhorn**
 
 ## Installation
 
@@ -22,7 +20,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+markdown = <<MD
+---
+title: 'how to use fratterhorn'
+date: 2018-01-31 21:00 JST
+tags:
+- ruby
+- gem
+- howto
+- programming
+---
+
+## What is fratterhorn?
+- a gem
+- parse frontmatter
+MD
+
+
+Fratterhorn.parse(markdown)
+# => { title: 'how to use fratterhorn', date: '2018-01-31 21:00 JST', tags: ['ruby', 'gem', 'howto', 'programming'] }
+
+Fratterhorn.parse(markdown, option: { guess: true }) # :date value is instance of a Time class
+# => { title: 'how to use fratterhorn', date: 2018-01-31 21:00 JST, tags: ['ruby', 'gem', 'howto', 'programming'] }
+```
 
 ## Development
 
