@@ -1,4 +1,6 @@
 ---
+notifications:
+  on_success: never
 sudo: false
 language: ruby
 cache: bundler
