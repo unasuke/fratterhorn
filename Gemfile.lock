@@ -16,7 +16,7 @@ DEPENDENCIES
   bundler (~> 1.17)
   fratterhorn!
   minitest (~> 5.0)
-  rake (~> 10.0)
+  rake
 
 BUNDLED WITH
    1.17.2
